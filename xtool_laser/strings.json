@@ -1,0 +1,49 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up xTool laser",
+        "description": "Choose manual IP setup or auto-discovery.",
+        "menu_options": {
+          "discover": "Auto-discover devices",
+          "manual": "Enter host manually"
+        }
+      },
+      "manual": {
+        "title": "Connect to xTool laser",
+        "description": "Set up local connection using host/IP.",
+        "data": {
+          "host": "Host/IP address",
+          "name": "Device name"
+        }
+      },
+      "discover": {
+        "title": "Select discovered xTool",
+        "description": "Pick a discovered xTool device.",
+        "data": {
+          "host": "Discovered host",
+          "name": "Device name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the xTool device.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This xTool device is already configured",
+      "no_devices_found": "No xTool devices were discovered on your network"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "xTool options",
+        "data": {
+          "scan_interval": "Scan interval (seconds)",
+          "use_websocket": "Use WebSocket live updates"
+        }
+      }
+    }
+  }
+}

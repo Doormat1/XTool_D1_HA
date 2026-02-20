@@ -1,0 +1,7 @@
+{
+  "name": "xTool Laser",
+  "domains": ["xtool_laser"],
+  "homeassistant": "2024.1.0",
+  "iot_class": "local_push",
+  "content_in_root": false
+}

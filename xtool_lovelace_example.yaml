@@ -1,0 +1,54 @@
+type: vertical-stack
+cards:
+  - type: entities
+    title: xTool Laser
+    show_header_toggle: false
+    entities:
+      - entity: sensor.xtool_laser_job_progress
+        name: Progress
+      - entity: sensor.xtool_laser_working_state
+        name: State
+      - entity: sensor.xtool_laser_working_time
+        name: Working time
+      - entity: sensor.xtool_laser_machine_event
+        name: Last event
+      - entity: sensor.xtool_laser_machine_type
+        name: Model
+  - type: gauge
+    name: Job progress
+    entity: sensor.xtool_laser_job_progress
+    min: 0
+    max: 100
+    severity:
+      green: 0
+      yellow: 60
+      red: 90
+  - type: horizontal-stack
+    cards:
+      - type: button
+        name: Pause
+        icon: mdi:pause-circle-outline
+        entity: button.xtool_laser_pause_job
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.xtool_laser_pause_job
+      - type: button
+        name: Resume
+        icon: mdi:play-circle-outline
+        entity: button.xtool_laser_resume_job
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.xtool_laser_resume_job
+      - type: button
+        name: Stop
+        icon: mdi:stop-circle-outline
+        entity: button.xtool_laser_stop_job
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.xtool_laser_stop_job

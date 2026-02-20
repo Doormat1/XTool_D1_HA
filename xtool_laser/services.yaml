@@ -1,0 +1,29 @@
+pause_job:
+  name: Pause job
+  description: Pause the current xTool job.
+  fields:
+    entry_id:
+      name: Entry ID
+      description: Optional config entry ID. If omitted, applies to all configured xTool devices.
+      required: false
+      example: 01JEXAMPLEENTRYID
+
+resume_job:
+  name: Resume job
+  description: Resume the current xTool job.
+  fields:
+    entry_id:
+      name: Entry ID
+      description: Optional config entry ID. If omitted, applies to all configured xTool devices.
+      required: false
+      example: 01JEXAMPLEENTRYID
+
+stop_job:
+  name: Stop job
+  description: Stop the current xTool job.
+  fields:
+    entry_id:
+      name: Entry ID
+      description: Optional config entry ID. If omitted, applies to all configured xTool devices.
+      required: false
+      example: 01JEXAMPLEENTRYID
