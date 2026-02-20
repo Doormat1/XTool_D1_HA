@@ -34,8 +34,10 @@ This repository now includes a HACS-ready custom integration in:
 - A ready-to-paste Lovelace example is included in `xtool_lovelace_example.yaml`.
 - A compact phone-oriented variant is included in `xtool_lovelace_mobile.yaml`.
 - Add a **Manual card** and paste the YAML.
-
+- If your entity IDs differ, update the `sensor.xtool_laser_*` and `button.xtool_laser_*` names to match your installation.
+- 
 ## Credits
 Building using the protocol explained in this repo - https://github.com/1RandomDev/xTool-Connect 
-- If your entity IDs differ, update the `sensor.xtool_laser_*` and `button.xtool_laser_*` names to match your installation.
+
+
 
